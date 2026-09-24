@@ -1,0 +1,14 @@
+---
+import FullscreenButton from "../components/fullscreen"
+import Scan from "../components/scan"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+  <div class="flex flex-col justify-center items-center">
+    <Scan client:load />
+    <div class="flex jus items-center w-50 h-50">
+      <FullscreenButton client:load />
+    </div>
+  </div>
+</Layout>

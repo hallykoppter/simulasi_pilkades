@@ -1,0 +1,12 @@
+---
+import FullscreenButton from "../components/fullscreen"
+import Pilih from "../components/pilih"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+  <Pilih client:load />
+  <div class="fixed z-100 top-1 right-1">
+    <FullscreenButton client:load />
+  </div>
+</Layout>
